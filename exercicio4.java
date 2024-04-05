@@ -1,20 +1,23 @@
-package exercicios_aula4;
+package exercicios;
 
 import java.util.Scanner;
+
 
 public class exercicio4 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-            System.out.println("Insira seu nome: ");
-            String nome = scan.next();
+        
+            System.out.println("Insira a temperatura atual em Celsius");
+            int temp = scan.nextInt();
             
-            System.out.println("Insira um número: ");
-            int num = scan.nextInt();
-            
-                for (int i = 1; i <= num; i++) {
-                    System.out.println(i+" "+nome);
-                }
+            if (temp > 30) {
+                System.out.println("Está quente");
+            } else if (temp > 15 && temp <= 30) {
+                System.out.println("Está morno");
+            } else if (temp <= 15) {
+                System.out.println("Está frio");
+            }
     }
 
 }

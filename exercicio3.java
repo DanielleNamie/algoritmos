@@ -1,16 +1,23 @@
-package exercicios_aula4;
+package exercicios;
 
 import java.util.Scanner;
+
 
 public class exercicio3 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-            System.out.println("Insira seu nome: ");
-            String nome = scan.next();
             
-            for (int i = 1; i <= 10; i++) {
-                System.out.println(i +" "+nome);
+            System.out.println("Digite um número inteiro");
+            int num1 = scan.nextInt();
+            
+            System.out.println("Digite outro número inteiro");
+            int num2 = scan.nextInt();
+            
+            if (num1 > num2) {
+                System.out.println("O maior número é " + num1);
+            } else {
+                System.out.println("O maior número é " + num2);
             }
     }
 

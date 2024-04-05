@@ -1,22 +1,23 @@
-package exercicios_aula4;
+package exercicios;
 
 import java.util.Scanner;
+
 
 public class exercicio6 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-            int somaIdades = 0;
+        
+            System.out.println("Qual foi a sua nota na prova?");
+            int nota = scan.nextInt();
             
-            System.out.println("Insira a idade de 20 pessoas: ");
-            
-            for (int i = 1; i <= 20; i++) {
-                System.out.println("Pessoa " + i + ": ");
-                int idade = scan.nextInt();
-                somaIdades = somaIdades + idade;
+            if (nota >= 7) {
+                System.out.println("Você foi aprovado");
+            } else if (nota < 5) {
+                System.out.println("Você foi reprovado");
+            } else {
+                System.out.println("Você está em recuperação");
             }
-            
-            System.out.println("A soma das idades das 20 pessoas é: " +somaIdades);
     }
 
 }

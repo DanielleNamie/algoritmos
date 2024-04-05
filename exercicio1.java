@@ -1,11 +1,23 @@
-package exercicios_aula4;
+package exercicios;
+
+import java.util.Scanner;
 
 public class exercicio1 {
 
     public static void main(String[] args) {
-        for (int i = 1; i <= 20; i++) {
-            System.out.println(i +" Eu gosto de estudar Algoritmos!");
-        }
+        Scanner scan = new Scanner(System.in);
+        
+            System.out.println("Digite um número");
+            int num = scan.nextInt();
+
+            int restoDivisao = num % 2;
+
+            if (restoDivisao == 0){
+                System.out.println(num + " é par");
+            } else {
+                System.out.println(num + " é ímpar");
+            }
     }
 
 }
+   

@@ -1,22 +1,25 @@
-package exercicios_aula4;
+package exercicios;
 
 import java.util.Scanner;
+
 
 public class exercicio5 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-            int soma = 0;
+        
+            System.out.println("Insira a sua idade");
+            int idade = scan.nextInt();
             
-            System.out.println("Insira 10 números: ");
-            
-            for (int i = 0; i < 10; i++) {
-                System.out.println("número "+(i + 1)+": ");
-                int numero = scan.nextInt();
-                soma = soma + numero;
+            if (idade < 12) {
+                System.out.println("Você é criança");
+            } else if (idade >= 12 && idade < 18) {
+                System.out.println("Você é adolescente");
+            } else if (idade >= 18 && idade < 60) {
+                System.out.println("Você é adulto");
+            } else {
+                System.out.println("Você é idoso");
             }
-            
-            System.out.println("A soma dos números é: " +soma);
     }
 
 }

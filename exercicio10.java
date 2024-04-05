@@ -1,26 +1,25 @@
-package exercicios_aula4;
+package exercicios;
 
 import java.util.Scanner;
+
 
 public class exercicio10 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
-            int zeroCem = 0;
             
-            System.out.println("Insira 20 números: ");
-            
-            for (int i = 1; i <= 20; i++) {
-                System.out.println("número " + i + ": ");
-                int num = scan.nextInt();
-            
-                if (num >= 0 && num <= 100) {
-                zeroCem++;
-                }
+            System.out.println("Insira um número");
+            int num = scan.nextInt();
+           
+            if (num % 2 == 0 && num % 3 == 0) {
+                System.out.println("O número é par e múltiplo de 3");
+            } else if (num % 2 == 0) {
+                System.out.println("O número é par, mas não é múltiplo de 3");
+            } else if (num % 3 == 0) {
+                System.out.println("O número não é par, mas é múltiplo de 3");
+            } else {
+                System.out.println("O número não é par e nem múltiplo de 3");
             }
-            
-            System.out.println(+zeroCem + " de 20 números estão entre 0 e 100");
-    }        
+    }
 
 }
